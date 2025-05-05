@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Your Next Adventure - Visit Ethiopia</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #20b2aa; }
         header { background-color: #008080; color: white; text-align: center; padding: 10px; }
@@ -213,31 +214,49 @@
         <p><span id="current-year"></span> Ethiopia Tourism</p>
     </footer>
     <script>
-        function showPopup(src) {
-            document.getElementById('popup-image').src = src;
-            document.getElementById('popup').style.display = 'block';
-            document.getElementById('popup-overlay').style.display = 'block';
-        }
-        function hidePopup() {
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('popup-overlay').style.display = 'none';
-        }
-        let currentTestimonial = 0;
-        let testimonials = Array.from(document.querySelectorAll('.testimonial'));
-        function showTestimonial(index) {
-            testimonials.forEach((testimonial, i) => {
-                testimonial.classList.toggle('active', i === index);
-            });
-        }
-        function previousTestimonial() {
-            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        }
-        function nextTestimonial() {
-            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        }
-        document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Popup Gallery Functions
+function showPopup(src) {
+    const popupImage = document.getElementById('popup-image');
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('popup-overlay');
+    
+    popupImage.src = src;
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+}
+
+function hidePopup() {
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('popup-overlay');
+    
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
+// Testimonial Carousel Functions
+let currentTestimonial = 0;
+const testimonials = Array.from(document.querySelectorAll('.testimonial'));
+
+function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.classList.toggle('active', i === index);
+    });
+}
+
+function previousTestimonial() {
+    currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentTestimonial);
+}
+
+function nextTestimonial() {
+    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+    showTestimonial(currentTestimonial);
+}
+
+// Set Current Year in Footer
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+});
     </script>
-</body>
+</body> <script src="scripts.js"></script>
 </html>
