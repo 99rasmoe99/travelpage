@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Your Next Adventure - Visit Ethiopia</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #20b2aa; }
+        header { background-color: #008080; color: white; text-align: center; padding: 10px; }
+        nav { display: flex; justify-content: center; background: #20b2aa; padding: 10px; }
+        nav a { color: #FFFFFF; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        section { padding: 20px; text-align: center; }
+        footer { background-color: #e655ae; color: whitesmoke; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        .gallery-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .gallery-container img { width: 200px; height: 150px; border-radius: 5px; cursor: pointer; transition: transform 0.3s; }
+        .gallery-container img:hover { transform: scale(1.1); }
+        .popup { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; }
+        .popup img { width: 90%; height: auto; border-radius: 10px; }
+        .popup-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9; }
+        .testimonial-carousel { max-width: 600px; margin: 20px auto; text-align: center; position: relative; }
+        .testimonial { background-color: #577013; padding: 15px; border-radius: 5px; margin: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: none; }
+        .testimonial.active { display: block; }
+        .carousel-controls button { background: #008080; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin: 10px; }
+        #contact {
+            padding-bottom: 80px; /* Add extra padding to avoid overlap with the footer */
+        }
+        .carousel-controls button:hover { background-color: #005959; }
+        form button { background-color: #008080; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        form button:hover { background-color: #005959; }
+        .about-image { width: 300px; height: auto; border-radius: 10px; }
+        .highlight { color: blue; }
+        .highlight span { display: inline; }
+        .blue-text { color: blue; }
+        .blue-text span { display: inline; }
+        .blue-text { color: blue; }
+        .blue-text span { display: inline; }
+        .blue-text span { display: inline; }
+    </style>
+</head>
+<body>
+    <header>
+            <span class="blue-text">
+        <h1>Discover Your Next Adventure
+            <br>Visit Ethiopia</h1>
+        <p>Explore the beauty, culture, and history of Ethiopia with us!</p>
+        <p>Experience the breathtaking landscapes, rich culture, and warm hospitality of Ethiopia. From the ancient rock-hewn churches of Lalibela to the stunning Simien Mountains, Ethiopia offers a unique blend of history and natural beauty. Join us on an unforgettable journey through this incredible country!</p>
+        </p>
+        <div>
+            <img src="https://thafd.bing.com/th/id/OIP.48dIwa3JhZGT4OXehMUEYwHaE7?w=330&h=200&c=7&r=0&o=5&pid=1.7" alt="Scenic view of a destination" title="Blue nile falls" style="width: 330px; height: 200px;">
+            <img src="https://thafd.bing.com/th/id/OIP.mgDouPyqhUaF27xmNcIxRwHaFj?w=330&h=200&c=7&r=0&o=5&pid=1.7" alt="Night view of Addis Ababa" title="Addis Abeba City Hall" style="width: 330px; height: 200px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Addis_in_night.jpg/330px-Addis_in_night.jpg" alt="Night view of Addis Ababa" title="Night view of Addis Ababa" style="width: 330px; height: 200px;">
+            <img src="https://thafd.bing.com/th/id/OIP.RYt3_TJcpZVwvbKPvG4WzAHaE8?w=306&h=197&c=7&r=0&o=5&pid=1.7" alt="Scenic view of a destination" title="Africa's poltical capital Addis Abeba">
+            <img src="https://thafd.bing.com/th/id/OIP.FncSL_rz-xYNo2D9kmaAkQHaFB?w=330&h=200&c=7&r=0&o=5&pid=1.7" alt="Beautiful landscape view" title="Harar Gate, one of five!" style="width: 330px; height: 200px;">
+            <img src="https://www.bing.com/th/id/OIP.eirxq5q5BdeR1K1ETCuItgHaE4?w=330&h=200&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Scenic view of a destination" title="African Union Headquarter Adiss Ababa" style="width: 330px; height: 200px;">
+            <img src="https://thafd.bing.com/th/id/OIP.8sPsFtCnPco75ye-LtynYgHaEM?w=330&h=200&c=7&r=0&o=5&pid=1.7" alt="Scenic view of a destination" title="Scenic downtown Addis Ababa" style="width: 330px; height: 200px;">
+            <img src="https://thafd.bing.com/th/id/OIP.pG4LOiw6hRyOrzEFNBuzGQHaEt?w=300&h=200&c=7&r=0&o=5&pid=1.7" alt="" title="Beautyful Ethiopian Landscapre">
+            
+            
+            
+        </div>
+    
+
+    </section>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+            
+    <section id="about">
+        <span class="highlight">
+        
+        <h2>About Us</h2>
+        <p>
+            We are a leading tourism company dedicated to providing unforgettable travel experiences. Our team of experts is here to help you explore ethiopian's beautiful peoples, culture and amazing landscapes. Whether you're looking for adventure, relaxation, or cultural immersion, we have the perfect package for you. These destinations offer a mix of natural beauty, rich history, and vibrant culture. Whether you're trekking in the mountains or exploring ancient churches, Ethiopia has something for everyone.
+        </p>
+
+      
+    </section>
+        <div>
+        <span class="blue-text">
+        <h2>Why Visit Ethiopia?</h2>
+        <p> 
+            <p> Discover the unique blend of history, culture, and natural beauty that makes Ethiopia a must-visit destination. From the ancient rock-hewn churches of Lalibela to the stunning landscapes of the Simien Mountains, Ethiopia offers a diverse range of experiences for every traveler. Experience the rich cultural heritage of Ethiopia, where ancient traditions meet modern life. Explore vibrant markets taste delicious Ethiopian cuisine, and immerse yourself in the warm hospitality of the Ethiopian people. Whether you're an adventure seeker, a history buff, or a nature lover, Ethiopia has something for everyone. Discover the      breathtaking landscapes, unique wildlife and rich cultural heritage that make Ethiopia a truly unforgettable destination. Join us  on a journey to explore the hidden gems of Ethiopia, where every corner reveals a new adventure waiting to be discovered. From the stunning landscapes of the Simien Mountains to the ancient rock-hewn churches of Lalibela, Ethiopia is a country rich in history   and natural beauty. Experience the vibrant culture, delicious cuisine, and warm hospitality of the Ethiopian people as you explore this incredible destination. Whether you're trekking through the mountains, exploring ancient ruins, or relaxing by the shores of Lake Tana, Ethiopia offers a unique and unforgettable travel experience. Discover the beauty and diversity of this amazing country with us.
+            </p>
+        </p>
+
+        </section>    
+            <h2>Top 11 Must-See Places in Ethiopia</h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Simien_Mountains" target="_blank" rel="noopener">Simien Mountains</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Lalibela" target="_blank" rel="noopener">Rock-Hewn Churches of Lalibela</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Harar" target="_blank" rel="noopener">The Holy City of Harar</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Gondar" target="_blank" rel="noopener">Gondar</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Addis_Ababa" target="_blank" rel="noopener">Addis Ababa</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Blue_Nile_Falls" target="_blank" rel="noopener">Blue Nile Falls</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Axum" target="_blank" rel="noopener">Aksum</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Arba_Minch" target="_blank" rel="noopener">Arba Minch</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Omo_Valley" target="_blank" rel="noopener">Omo Valley</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Danakil_Depression" target="_blank" rel="noopener">Danakil Depression</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Lake_Tana" target="_blank" rel="noopener">Lake Tana</a></li>
+        </ul>
+    </div>
+        </section>
+            
+            <span class="blue-text">
+            <span style="color: blue";>
+            <h3>Travel Tips for First-Time Visitors</h3>
+            <p>Here are some essential travel tips to help you make the most of your adventure.
+               If you're visiting Ethiopia for the first time, here are some tips to consider:</p>
+            <ul>
+                <li>Focus on the North or South: If you're short on time, consider visiting either the North or South regions for a more manageable experience.</li>
+                <li>Book Tours and Transfers in Advance: If you're short on time, it's advisable to book tours and transfers in advance to ensure a smooth experience.</li>
+                <li>Pack Essentials: Make sure to pack the essentials, especially if you plan to leave the cities. </li>
+            <li>Explore Diverse Experiences: Ethiopia offers a diverse range of experiences, from visiting Christian sites to meeting ancient tribes.</li>
+            <li>Travel Guide: Utilize travel guides to help you navigate the country and make the most of your visit. These tips will help you have a more enjoyable and informative first visit to Ethiopia!</li>
+        </article>
+    <section id="gallery">
+        <h2>Interactive Gallery</h2>
+        <div class="gallery-container">
+            <img src="https://th.bing.com/th/id/R.e954dd3abf96e15c473e6a43ed79f280?rik=%2b3Y84QLhd9mjvg&pid=ImgRaw&r=0" alt="The Lion" title="The Lion of Judah Monument Ethiopia" onclick="showPopup(this.src)">
+            <img src="https://thafd.bing.com/th/id/OIP.DaKTZ0-9pqTHBeuuiV1Y0gHaEK?w=317&h=180&c=7&r=0&o=5&pid=1.7" alt="Addis Ababa Bole" title="Addis Ababa Bole International Airport" onclick="showPopup(this.src)">
+            <img src="https://thafd.bing.com/th/id/OIP.AQxYbW61sXLkBxXrJz5nugHaEK?rs=1&pid=ImgDetMain" alt="Scenic view of a destination" title="Skayline hotel in Addis Ababa" onclick="showPopup(this.src)">
+            <img src="https://www.kayak.com/rimg/himg/26/48/cf/leonardo-7608-188958909-429015.jpg" alt="Sheraton" title="The only five star in Africe, Sheraton Addis Ababa" onclick="showPopup(this.src)">
+            <img src="https://c8.alamy.com/comp/HPHBYN/addis-ababa-light-rail-transit-station-meskel-square-addis-ababa-ethiopia-HPHBYN.jpg" alt="Addis Ababa Light Rail" title="Addis Ababa Light Rail Transit" onclick="showPopup(this.src)"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Addis_in_night.jpg/330px-Addis_in_night.jpg" alt="Destination 1" title="Night view of Addis Ababa" onclick="showPopup(this.src)">
+            <img src="https://thafd.bing.com/th/id/OIP.8sPsFtCnPco75ye-LtynYgHaEM?w=312&h=200&c=7&r=0&o=5&pid=1.7" alt="Destination 4" title="View of Addis Ababa" onclick="showPopup(this.src)">         
+            <img src="https://www.bing.com/th/id/OIP.eirxq5q5BdeR1K1ETCuItgHaE4?w=312&h=200&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="aksum obelisk" title="aksum obelisk" onclick="showPopup(this.src)">
+            <img src="https://cdn.britannica.com/72/194872-050-613B28D0/New-African-Union-Commission-headquarters-building-Addis-Ababa-Ethiopia.jpg" alt="Destination 1" title="African Union Headquarter A.A" onclick="showPopup(this.src)">
+            <img src="https://thafd.bing.com/th/id/OIP.GboHQyIRLyF8k1pyA6H2gwHaD9?w=330&h=200&c=7&r=0&o=5&pid=1.7" alt="Destination 2" title="Mekelle-city-Public-and-GovRelation-office" onclick="showPopup(this.src)">
+            <img src="https://thafd.bing.com/th/id/OIP.gzq6PDgKsQvGvCkQiJuE0gHaLH?w=204&h=306&c=7&r=0&o=5&pid=1.7" alt="Destination 4" title="obelisk of axum" onclick="showPopup(this.src)">             
+            <img src="https://thafd.bing.com/th/id/OIP.yzsCyBTJyyjbXPsinP1IWQHaEb?w=284&h=180&c=7&r=0&o=5&pid=1.7" alt="Scenic view of Tigray" title="Scenic view of Tigray">
+            <img src="https://thafd.bing.com/th/id/OIP.WffLIvnNix79FPqMBH23BQHaFj?rs=1&pid=ImgDetMain" alt="Destination 1" title="Fasil Ghebbi | The Royal Enclosure | Brilliant Ethiopia" onclick="showPopup(this.src)">         
+            <img src="https://media.istockphoto.com/photos/gondar-ethiopia-fasil-ghebbi-unesco-world-heritage-site-picture-id497947897?k=20&m=497947897&s=612x612&w=0&h=oRP69hs5j99r0L-aPzj2G9lAt8wSBjqO3dgbrXUaY80=" alt="Gondar scenic view" title="Gondar scenic view" onclick="showPopup(this.src)">
+            <img src="https://img00.deviantart.net/c2b7/i/2012/272/8/8/fasil__ghebbi_by_citizenfresh-d5g8hdy.jpg" alt="Fasil Ghebbi" title="Fasil Ghebbi" onclick="showPopup(this.src)">
+            <img src="https://dynamic-media.tacdn.com/media/photo-o/2f/19/85/c7/caption.jpg?w=700&h=500&s=1" alt="Fasil Ghebbi" title="Inside Rock-hewn churches of Lalibela" onclick="showPopup(this.src)">
+            <img src="https://thafd.bing.com/th/id/OSK.HEROKQY9EVvyFPwRbb2JN4DzSdgGZxq0zcDNQd-WtLjObBk?w=330&h=200&c=1&rs=2&o=6&pid=SANGAM" alt="Rock-hewn churches of Lalibela" title="Rock-hewn churches of Lalibela" onclick="showPopup(this.src)">
+            <img src="https://cdn.getyourguide.com/img/tour/edb54a95f8233907dff7141c4509d7a10d8098967ae6b9d00196cd52c4df81a1.png/4.jpg" alt="Destination 2" title="Rock-hewn churches of Lalibela" onclick="showPopup(this.src)">
+            <img src="https://thafd.bing.com/th/id/OIP.FncSL_rz-xYNo2D9kmaAkQHaFB?w=261&h=180&c=7&r=0&o=5&pid=1.7" alt="Destination 2" title="Harar city gate" onclick="showPopup(this.src)"> 
+            <img src="https://c8.alamy.com/comp/2H9R6C6/city-gate-old-town-harar-ethiopia-2H9R6C6.jpg" alt="Destination 1" title="Harar city gate" onclick="showPopup(this.src)">
+            <img src="https://images.squarespace-cdn.com/content/v1/581aae8fd482e9494baaaf15/a14e93fb-8d07-463d-aa97-742e3f686f0a/harar_ethiopia_photography_tours_sm-79.jpg?format=750w" alt="Photography tour in Harar, Ethiopia" title="Gondar scenic view">
+            <img src="https://c8.alamy.com/comp/E7Y32P/harar-ethiopia-july-262014-a-gate-with-a-welcoming-message-is-placed-E7Y32P.jpg" alt="Harar city gate with a welcoming message" title="Harar city gate">
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=290,height=260,dpr=1/tour_img/c1b250148644c2fa464eb9b6591b7aa6a3c754d98dfe2821290d691bfb9af32f.jpg" alt="Destination 2" title="Rock-hewn churches of Lalibela  during Hollydays" onclick="showPopup(this.src)">
+            <img src="https://c8.alamy.com/comp/AXDT7G/hyena-feeding-in-harar-ethiopia-AXDT7G.jpg" alt="Hyena feeding in Harar" title="Hyena feeding in Harar" onclick="showPopup(this.src)">
+            <img src="https://thafd.bing.com/th/id/OIP.6VSv1pD_o-7vadodDAGcMQHaE8?rs=1&pid=ImgDetMain" alt="Sunset Omo Valley Ethiopia" title="Sunset Omo Valley Ethiopia" onclick="showPopup(this.src)">
+            <img src="https://africaonlinemuseum.org/wp-content/uploads/2020/09/Omo14.jpg" alt="Omo Valley Ethiopia" title="Omo Valley Girl" onclick="showPopup(this.src)">
+            <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2020/07/Feature-image-Ethiopia3.jpg?tr=w-600,pr-true" alt="Omo Valley Ethiopia" title="Omo Valley beautyfying each" onclick="showPopup(this.src)">
+            <img src="https://dynamic-media.tacdn.com/media/photo-o/2f/19/59/6c/caption.jpg?w=1400&h=1000&s=1" alt=" Omo Valley Ethiopia" title="Omo Valley Ethiopia" onclick="showPopup(this.src)">
+            <img src="https://media.tacdn.com/media/photo-o/18/4c/e5/60/20190601-085042-largejpg.jpg" alt="Omo Valley" title="Omo Valley" onclick="showPopup(this.src)">
+            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=290,height=260,dpr=1/tour_img/77ad16b754dc3c8641ea8cd3d861612e4d4433362811c4e6990f0d3fb56fff2f.jpg" alt="Tour Image" title="Tour Image" onclick="showPopup(this.src)">
+            <img src="https://thafd.bing.com/th/id/OSK.HEROGECOc68a5T_O1Qr4hu-a6bbGiqkF6uWYAsNDOrmMr78?w=312&h=200&c=7&rs=1&o=6&pid=SANGAM" alt="Danakil Desert" title="Danakil Desert" onclick="showPopup(this.src)">
+            <img src="https://live.staticflickr.com/3532/3269113979_4915e7fd95_b.jpg" alt="Danakil Desert" title="Danakil Desert" onclick="showPopup(this.src)">
+            <img src="https://static01.nyt.com/images/2017/01/31/science/31DANAKILJP/31DANAKILJP-superJumbo.jpg" alt="Danakil Desert" title="Danakil Desert" onclick="showPopup(this.src)">
+            <img src="https://live.staticflickr.com/7726/26719118032_a911f67d37_b.jpg" alt="Danakil Desert" title="Acid lake, Dalol Danakil Desert" onclick="showPopup(this.src)">
+            <img src="https://image.shutterstock.com/shutterstock/photos/530735248/display_1500/stock-photo-bubbling-burning-lava-lake-inside-the-mount-marum-active-crater-in-the-x-km-wide-ambrym-island-s-530735248.jpg" alt="Danakil Desert" title="Erta Ale Volcano, Danakil Depression" onclick="showPopup(this.src)">
+            <img src="https://c8.alamy.com/comp/K2KWMA/erta-ale-volcano-danakil-depression-afar-ethiopia-K2KWMA.jpg" alt="Erta Ale Volcano" title="Erta Ale Volcano, Danakil Depression" onclick="showPopup(this.src)">
+
+            
+    </div>
+
+        <div class="popup-overlay" id="popup-overlay" onclick="hidePopup()"></div>
+        <div class="popup" id="popup">
+            <img id="popup-image" src="" alt="Popup Image">
+        </div>
+    </section>
+    <section id="testimonials">
+        <span style="color: blue";>
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial active">
+                <p>"The trip was amazing! Everything was perfectly organized, and we had an unforgettable experience!"</p>
+                <p>- Sarah J.</p>
+            </div>
+            <div class="testimonial">
+                <p>"I can't thank you enough for making our honeymoon special. The destinations were breathtaking."</p>
+                <p>- Michael & Emma</p>
+            </div>
+            <div class="testimonial">
+                <p>"Absolutely loved the service and attention to detail. Highly recommend!"</p>
+                <p>- Alex T.</p>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button onclick="previousTestimonial()">Previous</button>
+            <button onclick="nextTestimonial()">Next</button>
+        </div>
+    </section>
+    <section id="contact">
+        <span style="color: blue";>
+        <h2>Contact Us</h2>
+        <p>For Booking information, visit our <a href="https://expedia.com/affiliates/hotel-search-ethiopia.YiBQTsc" target="_blank" rel="noopener">Contact Page</a>.</p>
+        <div class="form-container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p><span id="current-year"></span> Ethiopia Tourism</p>
+    </footer>
+    <script>
+        function showPopup(src) {
+            document.getElementById('popup-image').src = src;
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('popup-overlay').style.display = 'block';
+        }
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('popup-overlay').style.display = 'none';
+        }
+        let currentTestimonial = 0;
+        let testimonials = Array.from(document.querySelectorAll('.testimonial'));
+        function showTestimonial(index) {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.classList.toggle('active', i === index);
+            });
+        }
+        function previousTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
